@@ -28,24 +28,17 @@ public class Firma {
 
     private double zsumujWydatki() {
         double sum = 0;
-        if (isNullWydatki()) {
-            return 0;
-        } else {
-            for (Map.Entry<String, Double> wydatek : wydatki.entrySet()) {
-                sum += wydatek.getValue();
-            }
+        for (Map.Entry<String, Double> wydatek : wydatki.entrySet()) {
+            sum += wydatek.getValue();
         }
+
         return sum;
     }
 
     private double zsumujPrzychody() {
         double sum = 0;
-        if (isNullPrzychody()) {
-            return 0;
-        } else {
-            for (Map.Entry<String, Double> przychod : przychody.entrySet()) {
-                sum += przychod.getValue();
-            }
+        for (Map.Entry<String, Double> przychod : przychody.entrySet()) {
+            sum += przychod.getValue();
         }
         return sum;
     }
@@ -61,14 +54,6 @@ public class Firma {
     private boolean isNullWydatki() {
         boolean isNull = true;
         if (wydatki != null) {
-            isNull = false;
-        }
-        return isNull;
-    }
-
-    private boolean isNullPrzychody() {
-        boolean isNull = true;
-        if (przychody != null) {
             isNull = false;
         }
         return isNull;
