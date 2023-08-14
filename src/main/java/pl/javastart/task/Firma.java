@@ -50,12 +50,4 @@ public class Firma {
     public void dodajWydatek(String nazwa, double wartosc) {
         wydatki.put(nazwa, wartosc);
     }
-
-    private boolean isNullWydatki() {
-        boolean isNull = true;
-        if (wydatki != null) {
-            isNull = false;
-        }
-        return isNull;
-    }
 }

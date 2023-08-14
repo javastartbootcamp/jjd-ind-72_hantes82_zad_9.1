@@ -1,7 +1,7 @@
 package pl.javastart.task;
 
 public class PodatekLiniowy extends FormaOpodatkowania {
-    private final double PODATEK_LINIOWY = 0.19;
+    private static final double PODATEK_LINIOWY = 0.19;
 
     @Override
     public double wyliczPodatek(double przychody, double wydatki) {

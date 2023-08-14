@@ -1,10 +1,10 @@
 package pl.javastart.task;
 
 public class PodatekSkala extends FormaOpodatkowania {
-    private final double PODATEK_OSIEMNASCIE = 0.18;
-    private final double PODATEK_TRZYDWA = 0.32;
-    private final double KWOTA_WOLNA = 10_000;
-    private double DRUGI_PROG = 100_000;
+    private static final double PODATEK_OSIEMNASCIE = 0.18;
+    private static final double PODATEK_TRZYDWA = 0.32;
+    private static final double KWOTA_WOLNA = 10_000;
+    private static double DRUGI_PROG = 100_000;
 
     @Override
     public double wyliczPodatek(double przychody, double wydatki) {
